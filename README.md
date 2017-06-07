@@ -1,5 +1,6 @@
 # fcc-frontend
 This repository contains some of the FrontEnd projects of the FreeCodeCamp Certification
+
 [(click here to go to my CodePen page)](https://codepen.io/valeporti/)
 
 ## Projects:
