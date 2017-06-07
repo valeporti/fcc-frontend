@@ -1,0 +1,138 @@
+//https://css-tricks.com/centering-css-complete-guide/
+#title {
+  margin: 20px auto 10px auto;
+  text-align: center;
+  font-size: 30px;
+  color: #F7FF3F;
+}
+#pomodoro {
+  background-color: #000000;
+  width: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+#cutName {
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: #000000;
+  width: 50%;
+  float: left;
+  height: 25px;
+  padding: 2px;
+}
+#lengthName {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: #000000;
+  width: 100%;
+  float: right;
+  height: 25px;
+  padding: 2px;
+  margin: 5px 0 5px 0;
+}
+#cut {
+  background-color: #000000;
+  width: 50%;
+  float: left;
+  height: 40px;
+}
+#length {
+  background-color: #000000;
+  width: 100%;
+  float: right;
+  height: 40px;
+}
+.counters {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+/* .btn {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #D93240;
+  color: #638CA6;
+  box-shadow: 0 5px gray;
+  text-align:center;
+} */
+.lenbtn {
+  background-color: #000000;
+  font-weight: bold;
+}
+.lenbtn:hover {
+  background: #F7FF3F;
+  color: #000000;
+}
+.lenbtn:active {
+  background-color: darkslategray;
+  box-shadow: 0 2px gray;
+  transform: translateY(3px);
+}
+#clock {
+  background-color: #000000;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  
+}
+#extCircle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #FF5108;
+  position: absolute; //necesario en child este y parent "realative"
+  overflow: hidden;
+  background-color: #000000;
+}
+#bigNum {
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+  padding: 128px 0 0 0;
+  font-weight: bold;
+  color: #FFFDF8;
+  z-index: 10;
+  position: relative;
+}
+#sube {
+  background-color: #FF5108;
+  z-index: -1;
+}
+#cutOffs {
+  background-color: #000000;
+  width: 50%;
+  height: 50px;
+  margin: 10px auto;
+  color: white;
+  text-align: center;
+}
+#Reset {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #000000;
+}
+#Reset:hover {
+  background: #F7FF3F;
+  color: #000000;
+}
+#Reset:active {
+  background-color: darkslategray;
+  box-shadow: 0 2px gray;
+  transform: translateY(3px);
+}
+body {
+  background-color: #000000;
+}
+
+//seleccion colores
+//Amarillo #F7FF3F
+//Negro #000000
+//blanco #FFFDF8
+//naranja #FF5108
+//rojo #FF2321

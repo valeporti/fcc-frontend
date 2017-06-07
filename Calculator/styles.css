@@ -1,0 +1,171 @@
+//http://stackoverflow.com/questions/39209934/ripple-effect-buttons-css3
+//http://stackoverflow.com/questions/5041494/selecting-and-manipulating-css-pseudo-elements-such-as-before-and-after-usin/21709814#21709814
+body {
+  background-color: #d3d3d3;
+}
+#calculator {
+  margin: 5em auto;
+  padding: 1em;
+  background-color: #0F5959;
+  border-radius: 0.5em 2em 0.5em 2em;
+  height: 28em;
+  width: 24em;
+  box-shadow: 2px 5px 3px gray;
+  border-style: solid;
+  border-color: gray;
+  overflow: hidden;
+}
+#title {
+  background-color: #0F5959;
+  width: 100%;
+  height: 5%;
+  color: gray;
+}
+//http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
+//http://lifehacker.com/learn-the-basics-of-color-theory-to-know-what-looks-goo-1608972072
+#screen {
+  background-color: #BFD4D9;
+  margin: 2% auto;
+  width: 100%;
+  height: 30%;
+  border-radius: 0.5em 2em 0.5em 2em;
+  border-color: gray;
+  border-style: solid;
+  //display: block;
+  position: relative;
+  overflow: hidden; // importante para contener efectos ripple
+  z-index: 10; // no conseguía que no se viera las puntas del efecto Ripple y esto lo arregló
+}
+#screenNum {
+  background-color: #BFD4D9; //#BFD4D9
+  width: 91%;
+  height: 60%;
+  margin: 5% 1% 0 8%;
+  padding: 0 2% 0 0;
+  text-align: right;
+  color: #17A687;
+  font-size: 46px;
+  border-radius: 20%;
+}
+#screenCal {
+  background-color: #BFD4D9;
+  width: 91%;
+  height: 25%;
+  margin: 0 1% 0 8%;
+  padding: 0 2% 0 0;
+  text-align: right;
+  font-size: large;
+  color: gray;
+  border-radius: 20%;
+}
+#press {
+  overflow: hidden;
+  height: 60%;
+}
+#buttons {
+  background-color: #0F5959; //#0F5959
+  margin: 2% auto;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+#signs {
+  background-color: #0F5959;
+  margin: 2% auto;
+  width: 30%;
+  height: 100%;
+  float: right;
+}
+.num {
+  padding: 5px 20px 5px 20px;
+}
+.sign {
+  padding: 1px 15px 0px 15px;
+}
+.btn {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #D93240;
+  color: #638CA6;
+  box-shadow: 0 5px gray;
+  text-align:center;
+}
+.btn:hover {
+  background: #638CA6;
+  color: white;
+}
+.btn:active {
+  background-color: darkslategray;
+  box-shadow: 0 2px gray;
+  transform: translateY(3px);
+}
+#one {
+  margin: 5% 0 0 4%;
+}
+#two {
+  margin: 5% 0 0 6%;
+}
+#three {
+  margin: 5% 0 0 6%;
+}
+#four {
+  margin: 5% 0 0 4%;
+}
+#five {
+  margin: 5% 0 0 6%;
+}
+#six {
+  margin: 5% 0 0 6%;
+}
+#seven {
+  margin: 5% 0 0 4%;
+}
+#eight {
+  margin: 5% 0 0 6%;
+}
+#nine {
+  margin: 5% 0 0 6%;
+}
+#point {
+  margin: 5% 0 0 4%;
+  padding: 5px 22px 5px 23px;
+}
+#zero {
+  margin: 5% 0 0 6%;
+}
+#equal {
+  margin: 5% 0 0 6%;
+}
+ //https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+#erase {
+  margin: 12% 0 0 5%;
+  overflow: hidden; // importante para contener efectos ripple
+  position: relative; // importante para contener efectos ripple
+}
+#sum {
+  margin: 10% 0 0 5%;
+}
+#min {
+  margin: 10% 0 0 5%;
+}
+#fois {
+  margin: 10% 0 0 5%;
+}
+#div {
+  margin: 10% 0 0 5%;
+  padding: 1px 23px 0px 23px;
+}
+
+.ripple-effect{
+  display: block;
+  position: absolute; //!?important that the element container has "position: relative" and "overflow: hidden".
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -100%;
+  margin-bottom: 100%;
+  border-radius: 20%;
+  opacity: 0;
+  transition: all 1s;
+}
+

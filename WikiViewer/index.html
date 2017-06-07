@@ -1,0 +1,27 @@
+<div id="gral">
+  <!-- El target='_blank' sirve para que se abra en una nueva pestaña -->
+  <a id="Rand" href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>Click Here to search a Random Article</a>
+  <div id="searchDiv" ng-app="WikiApp" ng-controller="WikiSearch">
+    <form id="request" ng-submit="submit()" class="form-search">
+      <div class="input-append">
+        <input id="tosearch" type="text" placeholder="Search for ..." name="query" ng-model="query" class="search-query">
+        <button id="srbtn" type="submit" name="Submit" id="search" class="btn">Go !</button>
+      </div>
+    </form>
+    <!-- <ol> -->
+      <!-- <li -->
+    <!-- <a class="lol" href="">
+     <div class="cntRep">
+        <div class="title">Title</div>
+        <div class="extr">article kdsnkdns dhnsjdnsjn udnsudn uisdjnsu dn jsdusn dsun usdn sudn unusd snds udnsudn sudns udns udnsud</div>
+    </div> 
+    </a> -->
+    <div ng-animate="'animate'" ng-repeat="article in content">
+      <a class="hrefArt" ng-href="https://en.wikipedia.org/?curid={{article.pageid}}" target='_blank'><div class="cntRep" >
+        <div class="title">{{article.title}}</div>
+        <div class="extr">{{article.extract}}</div>
+        </div></a>
+    </div>
+    <!-- </ol> -->
+  </div>
+</div>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|VT323|Oswald');
+
+//Notas: Borders no se puede asignar %, por definición
+body {
+  background-image: url("http://designreflect.com/wp-content/uploads/2012/09/wooden-textures/Vintage-Grunge-Wood-Background.jpg");
+}
+#chasis {
+  width: 400px;
+  height: 400px;
+  margin: 50px auto auto auto;
+  position: relative;
+  //background-color: gray;
+}
+.btnme {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  position: absolute;
+  border-top-left-radius: 100%;
+  border-width: 12px 8px 8px 12px;
+  border-style: solid;
+}
+#greenbtn {
+  background-color: #2d8632;
+  //claro: #76e67d
+}
+#redbtn {
+  background-color: #aa3939;
+  transform: rotate(90deg) translate(0%, -100%);
+  //encendido: #ff0e0e
+}
+#bluebtn {
+  background-color: #363377;
+  transform: rotate(180deg) translate(-100%, -100%);
+  //encendido: #1c16ca
+}
+#yellbtn {
+  background-color: #DDDD2D;
+  transform: rotate(-90deg) translate(-100%, 0%);
+  //encendido: #FFFF0F
+}
+#btnShape {
+  width: 54%;
+  height: 54%;
+  background-color: black;
+  position: absolute;
+  margin: 23%;
+  border-radius: 50%;
+}
+#board {
+  width: 90%;
+  height: 90%;
+  background-color: #ccc;
+  position: relative;
+  margin: 5%;
+  border-radius: 50%;
+}
+#title {
+  margin: auto;
+  text-align: center;
+  Color: white;
+  padding: 7% 0 0 0;
+  font-size: 2em;
+  #trdmrk {
+    font-size: 12px;
+    margin: 3px 0 0px 0;
+    position: absolute;
+  }
+}
+.txt {
+  text-align: center;
+  font-weight: bold;
+}
+#firstR {
+  //background-color: brown;
+  height: 40%;
+  width: 95%;
+  margin: 5% auto auto auto;
+  position: relative;
+  #counter {
+    height: 100%;
+    //background-color: yellow;
+    width: 40%;
+    position: absolute;
+    #counterScr {
+      height: 40px;
+      background-color: #AED0D9;
+      width: 60px;
+      border-radius: 2px 4px 4px 2px;
+      border-style: solid;
+      border-color: #083F4F;
+      margin: 15px auto auto auto;
+      font-family: monospacev 'VT323';
+      text-align: center;
+      font-size: 36px;
+      color: #083340;
+    }
+  }
+  #btns {
+    width: 60%;
+    height: 100%;
+    //background-color: green;
+    position: absolute;
+    margin: 0 0 0 40%;
+    .btncont {
+      margin: 40% auto 10% auto;
+      //background-color: black;
+      text-align: center; //La forma de centrar los botones (no sirve margin: auto
+    }
+//#265B6A
+//#AECFD8
+//#568694
+//#083340
+//#001115
+    .ctrlbtn {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      //background-color: #568694;
+      box-shadow: 0 3px #777;
+    }
+    .ctrlbtn:hover {
+      background: #638CA6;
+    }
+    .ctrlbtn:active {
+      background-color: #001115;
+      box-shadow: 0 1px #001115;
+      transform: translateY(2px);
+    }
+    #stContour {
+      height: 100%;
+      //background-color: brown;
+      width: 50%;
+      position: absolute;
+      #strt {
+        background-color: #568694;
+      }
+    }
+    #strlight {
+      height: 10px;
+      width: 10px;
+      background-color: #083F4F;
+      margin: 15% auto auto auto;
+      border-radius: 50%;
+      box-shadow: none;
+      //text-decoration: none;
+    //-webkit-transition: all 0.5s;
+    //-moz-transition: all 0.5s;
+      
+      
+    }
+    .classLighting {
+      //-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+      //-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+      animation: none;
+      transition: all 0.5s;
+      animation: neon1 1.5s ease-in-out infinite alternate;
+    }
+    #strictbtn {
+      margin: 8% 0% 10% 0%;
+    }
+    #strContour {
+      height: 100%;
+      //background-color: white;
+      width: 50%;
+      position: absolute;
+      margin: 0 0 0 50%;
+      #strict {
+        background-color: #FFEF00;
+      }
+    }
+  }
+}
+#secndR {
+  //background-color: purple;
+  margin: 5% auto auto auto;
+  width: 130px;
+  #onoff {
+    height: 20px;
+    width: 130px;
+    margin: auto;
+    text-align: center; //para centrar los 3 elementos pues están puestos como "inline-block"
+    //background-color: yellow;
+  }
+  #txton {
+    //background-color: green;
+  }
+  #txtoff {
+    //background-color: blue;
+  }
+  .onoffcl {
+    width: 35px;
+  }
+  .threeElem {
+    display: inline-block;
+    height: 20px;
+    vertical-align: top; //fue necesariopara que no aparecieran unos pixeles extras en laparte de arriba
+  }
+  #contonbtn {
+    background-color: gray;
+    width: 40px;
+    height: 16px; 
+    border-style: solid;
+    border-width: 2px;
+  }
+  #onbtn {
+    border-radius: 20%;
+    width: 20px;
+    height: 15px;
+    font-size: 20px;
+    background-color: #D93240;
+    color: #638CA6;
+    box-shadow: 0 1px gray;
+    margin: 0 0 0 19px;
+    transition: all 0.2s;
+  }
+  #onbtn:hover {
+    background: #638CA6;
+    color: white;
+  }
+}
+
+//posibles colores paletton de como verde
+//http://paletton.com/#uid=13o0u0kllll6tO1dUtQsMcQHE4l
+//#265B6A
+//#AECFD8
+//#568694
+//#083340
+//#001115
+//https://codepen.io/FelixRilling/pen/qzfoc?editors=0110
+
+@keyframes neon1 {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #568694, 0 0 35px #568694, 0 0 20px #568694, 0 0 50px #568694, 0 0 75px #568694;
+  }
+  to {
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #568694, 0 0 17px #568694, 0 0 20px #568694, 0 0 25px #568694, 0 0 32px #568694
+  }
+}
+
