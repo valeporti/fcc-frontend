@@ -1,0 +1,171 @@
+#readImg {
+  width: 300px;
+}
+#readImg:hover {
+  //display: block;
+  //position: absolute;
+  box-shadow: 0 0 0 3px white, 0 0 0 8px #6441a5;
+  transition: box-shadow 1s;
+  //animation-delay: 1s;
+  animation: ripple-out 1s 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes ripple-out {
+    from {
+      box-shadow: 0 0 0 3px white, 0 0 0 8px #6441a5;
+  }
+    to {
+      box-shadow: 0 0 0 8px white;
+  }
+}
+#read {
+  //background-color: gray;
+  width: 500px;
+  margin: 50px auto 25px auto;
+}
+//image colors: HEX #6441a5, RGB(100,65,165)
+#options {
+  //background-color: black;
+  display: inline;
+  position: absolute;
+  width: 200px;
+  height: 76px;
+  color: #6441a5;
+  text-align: center;
+  font-size: 30px;
+}
+.fa {
+  margin: 22px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 1s;
+}
+/* Tooltip */
+.fa + .tooltip {
+    background-color: #73AD21; 
+    color: #FFFFFF; 
+    border: 1px solid green; 
+    padding: 15px;
+    font-size: 20px;
+}
+.fa:hover {
+  //display: block;
+  //position: absolute;
+  box-shadow: 0 0 0 3px white, 0 0 0 8px #6441a5;
+  transition: box-shadow 1s;
+  //animation-delay: 1s;
+  animation: ripple-out 1s 0.7s;
+  //animation-fill-mode: forwards;
+}
+
+.grcnt {
+  width: 400px;
+  //background: gray;
+  //display: inline-block;
+  box-shadow: 0 0 2px 2px white, 0 0 2px 6px #6441a5;
+  height: 50px;
+  margin: 13px auto 0px auto;
+  transition: all .2s ease-in-out;
+}
+.grcnt:hover {
+  transform: scale(0.97);
+  box-shadow: 0 0 2px 1.5px white, 0 0 3px 4px #6441a5;
+}
+.img {
+  height: 50px;
+  display: inline;
+  margin: 0 3px 0 0;
+}
+.nme {
+  width: 200px;
+  //background-color: white;
+  display: inline;
+  float: right;
+  text-align: center;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  //overflow: hidden;
+  font-size: 17px;
+  line-height: 17px;
+  height: 18px;
+  margin: 16px auto;
+  color: #6441a5;
+}
+
+//http://stackoverflow.com/questions/11989546/wrap-a-text-within-only-two-lines-inside-div
+.stm {
+  font-style: italic;
+  //background-color: yellow;
+  color: #6441a5;
+  display: inline;
+  position: absolute;
+  margin: 2.5px auto;
+  width: 130px;
+  font-size: 12px;
+  height: 45px;
+  line-height: 15px;
+  overflow: hidden; //So letters are not showed it they are outside div
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.animate-enter {
+  animation: bounceIn 1s, enter_anim 1s;
+}
+.animate-leave {
+  animation:0.5s leave_anim;
+}
+@keyframes leave_anim {
+  from {
+    max-height: 90px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+@keyframes enter_anim {
+  to {
+    max-height: 90px;
+    opacity: 1;
+  }
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+//.animate-enter.animate-enter-active { 
+    //animation: bounceIn 1s;
+    //opacity: 1;
+    //top: 0;
+
+//} 
+//.animate-leave {
+  //animation: bounceOut 1s;
+  //top: -100px;
+  //scale: 0.10;
+//}
+//.animate.leave-active {
+  //opacity: 0;
+  //display:hidden;
+//}
+
+//NOTA: http://lab.hakim.se/scroll-effects/
+// https://github.com/hakimel/stroll.js/find/master
+// //cdn.bootcss.com/stroll.js/1.0/css/stroll.min.css
+.clOnline {
+  text-decoration: none;
+  transition: all 0.5s;
+  
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #82a541, 0 0 5px #82a541, 0 0 6px #82a541, 0 0 7px #82a541, 0 0 8px #82a541;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #82a541, 0 0 10px #82a541, 0 0 12px #82a541, 0 0 14px #82a541, 0 0 16px #82a541;
+  }
+}

@@ -1,0 +1,20 @@
+<div id="twitch" ng-app="Twitch" ng-controller="TwApp">
+  <div id="title">
+    <div id="read"><a href="https://www.twitch.tv/" target='_blank'><img id="readImg" src="http://content.eveonline.com/www/newssystem/media/65538/1/twitch-tv-bot.png" data-toggle="tooltip" data-placement="top" title="Go to Twitch.TV Page"></a>
+      <div id="options">
+        <i id="ioff" class="fa fa-user-circle op" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Offline" ng-click="myFilter = {online: 'Offline'}"></i>
+        <i class="fa fa-user-circle-o op" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Online" ng-click="myFilter = {online: 'Online'}"></i>
+        <i class="fa fa-twitch op" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Show All" ng-click="myFilter = null"></i>
+      </div>
+    </div>
+  </div>
+  <!-- To understand this kinda filter: http://stackoverflow.com/questions/21975754/angularjs-ng-click-displaying-data-filtered-by-multiple-parameters -->
+  <div class="twitches" ng-animate="'animate'" ng-repeat="user in content | filter: myFilter">
+    <a class="hrefArt" ng-href="{{user.url}}" target='_blank'>
+    <div class="grcnt">
+      <img class="img" ng-src="{{user.logoUrl}}"><!--
+    --><div class="stm">{{user.stream}}</div><!--
+    --><div class="nme" ng-class="{'clOnline': user.online == 'Online'}">{{user.name}}</div>
+      </div></a>
+  </div>
+</div>
